@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 17 Tina</title>
+</head>
+<body>
+<p>Click the Button to display a time-based greeting:</p>
+<button onclick="myFunction()">Try It</button>
+<p id="demo"></p>
+
+<script>
+	function myFunction() {
+		var hour = new Date().getHours();
+		var greeting;
+		if (hour < 8){
+			greeting = "Good day";
+		} else {
+			greeting = "Good evening";
+		}
+		document.getElementById("demo").innerHTML = greeting;
+	}
+</script>
+</body>
+</html>
